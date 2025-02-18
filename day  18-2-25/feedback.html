@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(247, 248, 249);
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            width: 40%;
+            margin: auto;
+            background: rgb(214, 247, 193);
+            padding: 25px;
+            border-radius: 10px;
+        }
+        .form{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #f98202;
+            border-radius: 4px;
+        }
+        .submit{
+            background-color: #28a745;
+            color: rgb(252, 250, 250);
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .submit:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form>
+            <div class="form">
+                <label>Name (optional):</label>
+                <input type="text" placeholder="Name(optional)">
+            </div>
+            <div class="form">
+                <label>Email (optional):</label>
+                <input type="email" placeholder="Email(optional)">
+            </div>
+            <div class="form">
+                <label>Phone:</label>
+                <input type="tel" placeholder="phone number(optional)">
+            </div>
+            <div class="form">
+                <label>Rating*:</label>
+                <select>
+                    <option value="">Select a rating</option>
+                    <option>1 - Poor</option>
+                    <option>2 - Ok</option>
+                    <option>3 - Good</option>
+                    <option>4 - Very Good</option>
+                    <option>5 - Excellent</option>
+                </select>
+            </div>
+            <div class="form">
+                <label>Questions*:</label>
+                <textarea placeholder="Ask your questions here"></textarea>
+            </div>
+            <div class="form">
+                <label>Comments </label>
+                <textarea placeholder="comments(optional)"></textarea>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
